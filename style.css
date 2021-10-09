@@ -433,8 +433,8 @@ h3{
 
 .wrapper{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 18px;
+    left: -10px;
     animation: show_toast 1s ease forwards;
   }
   @keyframes show_toast {
