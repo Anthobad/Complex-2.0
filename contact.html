@@ -7,6 +7,7 @@
     <title>Complex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 </head>
 <body>
     <section class="sub-header">
@@ -24,8 +25,22 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+
+        
         <h1>Contact Us</h1>
     </section>
+    <div class="wrapper">
+        <div class="toast">
+          <div class="content">
+            <div class="icon"><i class="uil uil-wifi"></i></div>
+            <div class="details">
+              <span>You're online now</span>
+              <p>Hurray! Internet is connected.</p>
+            </div>
+          </div>
+          <div class="close-icon"><i class="uil uil-times"></i></div>
+        </div>
+      </div>
 
 <!------ contact us ------->
 
@@ -52,19 +67,10 @@
                 <div>
                     <i class="fa fa-envelope-o"></i> 
                     <span>
-                        <h5></h5><a href="http://anthonybadawi100@gmail.com">Click Here!</a></h5>
+                        <h5></h5><a href="http://anthonybadawi100@gmail.com" class="hero-btn red-btn">SEND an e-mail HERE</a></h5>
                         <p>Contact Us</p>
                     </span>
                 </div>
-            </div>
-            <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Enter your name" required>
-                    <input type="email" placeholder="Enter email address" required>
-                    <input type="text" placeholder="Enter your subject" required>
-                    <textarea rows="8" placeholder="Message..." required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -98,6 +104,7 @@
         }
 
     </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
