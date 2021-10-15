@@ -9,6 +9,44 @@
     <link rel="shortcut icon" type="image/jpg" href="images/title logo 1.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <style>
+        .course#blur.active
+        {
+            filter: blur(2.5px);
+            pointer-events: none;
+            user-select: none;
+        }
+        #popup
+        {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 60%;
+            padding: 50px;
+            box-shadow: 0 5px 30px rgba(0,0,0,.30);
+            background: #fff;
+            border-radius: 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        #popup.active
+        {
+            top: 40%;
+            visibility: visible;
+            opacity: 1;
+            transition: 0.5s;
+        }
+        .open ul
+        {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
     <section class="sub-header">
@@ -45,7 +83,7 @@
 
 <!------ course ------->
 
-<section class="course">
+<section class="course" id="blur">
     <h1>Services We Offer</h1>
     <p>Here are some services we offer to our clients.</p>
 
@@ -53,39 +91,56 @@
         <div class="course-col">
             <h3>Website</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>        
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>        
+            
         </div>
         <div class="course-col">
             <h3>Application</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>    
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>    
         </div>
         <div class="course-col">
             <h3>Lessons</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>
         </div>
     </div>
     <div class="row">
         <div class="course-col">
             <h3>Website</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>        
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>        
         </div>
         <div class="course-col">
             <h3>Application</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>    
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>    
         </div>
         <div class="course-col">
             <h3>Lessons</h3>
             <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="#" class="hero-btn red-btn">Read More</a>
+            <a href="#" class="hero-btn red-btn" onclick="toggle()">For More Info</a>
         </div>
     </div>
-
-
 </section>
+<div id="popup">
+    <h2>Contact us</h2>
+    <p>Please contact us.</p>
+    <div class="open">
+        <ul>
+            <li><a href="#" class="hero-btn red-btn" onclick="toggle()">Close</a></li>
+            <li><a href="contact.html" class="hero-btn red-btn">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+</script>
     
 
 

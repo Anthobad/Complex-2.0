@@ -344,6 +344,8 @@ h3{
 }
 .about-col img{
     width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 .about-col h1{
     padding-top: 0;
@@ -373,6 +375,8 @@ h3{
 }
 .blog-left img{
     width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 .blog-left h2{
     color: #222;
@@ -411,6 +415,8 @@ h3{
 }
 .location iframe{
     width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 .contact-us{
     width: 80%;
