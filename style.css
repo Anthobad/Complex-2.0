@@ -545,10 +545,63 @@ h3{
     background: #efefef;
   }
 
-
-
-
-
+/*------lessons--------*/
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 70px;
+}
+.navigation li{
+    list-style: none;
+    z-index: 1;
+}
+.navigation li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f44336;
+    text-align: center;
+    text-decoration: none;
+}
+.navigation li a .icon{
+    position: relative;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 50px;
+}
+.navigation li.active a .icon{
+    font-size: 25px;
+    transform: translateY(-6px);
+}
+.navigation li a .text{
+    position: absolute;
+    font-size: 20px;
+    font-family: monospace;
+    color: #f44336;
+    bottom: 20px;
+    font-weight: 600;
+    transition: 0.25s;
+    transform: scale(0);
+}
+.navigation li.active a .text{
+    transform: scale(1);
+}
+.indicator{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: #f44336;
+}
 
 
 
