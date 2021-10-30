@@ -90,7 +90,6 @@ nav{
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    border-radius: 50px;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -143,7 +142,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 1px;
+    padding-top: 100px;
 }
 h1{
     font-size: 36px;
