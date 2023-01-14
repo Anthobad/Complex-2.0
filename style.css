@@ -28,7 +28,7 @@
     background-size: cover;
     position: relative;
 }
-label.logo{
+.logo{
     color: white;
     font-size: 30px;
     font-family: montserrat;
@@ -195,11 +195,14 @@ p{
     display: flex;
     justify-content: space-between;
 }
+
 .course-col{
-    flex-basis: 31%;
+    flex-basis: 50%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 00.5s;
@@ -227,9 +230,11 @@ h3{
     padding-top: 50px;
 }
 .campus-col{
-    flex-basis: 32%;
+    flex-basis: 50%;
     border-radius: 10px;
     margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -652,7 +657,7 @@ h3{
     .lessons ul li{
         width: 70px;
         height: 70px;
-        margin: 0 10px;
+        margin: 0 5px;
     }
     .lessons ul li a{
         position: absolute;
@@ -661,7 +666,6 @@ h3{
         right: 10px;
         bottom: 30px;
         text-align: center;
-        line-height: 70px;
         color: #f44336;
         background: rgb(255, 255, 255);
         font-size: 15px;
@@ -669,7 +673,7 @@ h3{
     }
     
     .lessons ul li a i{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 

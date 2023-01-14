@@ -277,7 +277,7 @@ section .container .owl-nav{
 
 .owl-theme .owl-nav [class*='owl-']:hover{
     background: transparent;
-    color: var(--midnight);
+    color: #f44336;
 }
 
 .owl-theme .owl-nav [class*='owl-']{
